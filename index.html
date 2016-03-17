@@ -13,7 +13,16 @@
         <script type="text/javascript" src="src/main/webapp/common/script/lib/jquery-2.1.0.min.js"></script>
         <!-- angularJs lib -->
         <script src="src/main/webapp/common/script/lib/angular.1.4.2.min.js" type="text/javascript"></script>
+        <script src="src/main/webapp/common/script/lib/angular-route.1.4.2.min.js" type="text/javascript"></script>
 
+
+        <script src="src/main/webapp/common/script/src/gallops.common.controller.navigation.js" type="text/javascript"></script>
+
+
+        <script src="src/main/webapp/common/script/app/gallops.common.service.constants.js" type="text/javascript"></script>
+        <script src="src/main/webapp/common/script/app/controllers.js" type="text/javascript"></script>
+        <script src="src/main/webapp/common/script/app/services.js" type="text/javascript"></script>
+        <script src="src/main/webapp/common/script/app/values.js" type="text/javascript"></script>
         <script src="src/main/webapp/common/script/app/app.js" type="text/javascript"></script>
 
     </head>
@@ -23,8 +32,12 @@
             documentation.</p>
         </noscript>
 
-        <div id="dvDisplay" class="view-holder">
-            <h1>Hello Usha Sagathiya! This is a test web app.</h1>
+        <div id="dvDisplay" class="view-holder" data-ng-controller="NavigationCtrl">
+            {{testNav}}
+
+            <div id="dvContent" data-ng-view="" class="gallops-content-area micro-clearfix"></div>
+
+<!--            <h1>Hello Usha Sagathiya! This is a test web app.</h1>
             <input type="text" data-ng-model="test">
             {{test}} hello there
         </div>
@@ -45,6 +58,6 @@
             <p>
                 <button>Send</button>
             </p>
-        </form>
+        </form>-->
     </body>
 </html>
