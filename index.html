@@ -1,0 +1,50 @@
+<!--
+ The main layout of the site. This layout holds the various views the user invokes by their actions.
+-->
+<!DOCTYPE html >
+<html data-ng-app="gallops">
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+        <meta name="viewport" content="width=device-width, initial-scale=1"/>
+        <title>Gallops Education Services</title>
+
+        <!-- default libraries stylesheets -->
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+        <script type="text/javascript" src="src/main/webapp/common/script/lib/jquery-2.1.0.min.js"></script>
+        <!-- angularJs lib -->
+        <script src="src/main/webapp/common/script/lib/angular.1.4.2.min.js" type="text/javascript"></script>
+
+        <script src="src/main/webapp/common/script/app/app.js" type="text/javascript"></script>
+
+    </head>
+    <body>
+        <noscript>
+        <p class="critical_warning">This site requires javascript to be enabled. Please consult your browser
+            documentation.</p>
+        </noscript>
+
+        <div id="dvDisplay" class="view-holder">
+            <h1>Hello Usha Sagathiya! This is a test app.</h1>
+            <input type="text" data-ng-model="test">
+            {{test}} Sachin
+        </div>
+        <h2>Contact Form:</h2><br>
+        <form name="contact" action="thank-you" netlify>
+            <p>
+                <label>Your Name:</label>
+                <input type="text" name="name">
+            </p>
+            <p>
+                <label>Your Email</label>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </p>
+            <p>
+                <button>Send</button>
+            </p>
+        </form>
+    </body>
+</html>
