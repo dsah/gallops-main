@@ -6,6 +6,12 @@ var url = require('url');
 var path = require('path');
 var util = require('util');
 
+var contentTypes = {
+    '.html': 'text/html',
+    '.css': "text/css",
+    '.js': 'application/javascript'
+};
+
 var dir = path.dirname(fs.realpathSync(__filename));
 
 http.createServer(function (req, res) { 
@@ -19,7 +25,8 @@ http.createServer(function (req, res) {
     var filename = dir + pathname;
     var stats = fs.existsSync(filename) && fs.statSync(filename);
     if (stats && stats.isFile()) {
-      res.writeHead(200, {'Content-Type' : 'application/javascript'});
+        var contentType = contentTypes[path.extname(filename)];
+      res.writeHead(200, {'Content-Type' : contentType});
       fs.createReadStream(filename).pipe(res);
       return;
     }

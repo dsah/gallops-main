@@ -1,0 +1,82 @@
+
+body{
+    width: 100%;
+    height: auto;
+    padding: 0px;
+    margin: 0px;
+    background-color: #BEE7F3;
+}
+#dvDisplay{
+    border-radius: 10px;
+}
+
+.branding{
+    background-color: #76ECEC;
+    height: 100px;
+}
+
+.main-container{
+    min-height: 650px;
+    border-radius: 5px;
+    background-color: lightskyblue;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+.page-container{
+    min-height: 350px
+}
+.md-tab.md-active{
+    background-color: #8C9EFF;
+}
+
+.md-tab:hover{
+    background-color: #8C9EFF;
+}
+md-tabs.md-default-theme .md-tab, md-tabs .md-tab{
+    color: white;
+}
+
+md-tabs-canvas{
+    background-color: green;
+}
+
+.dv-under-construction{
+    text-align: center;
+    margin: 200px;
+}
+
+#dvFooter{
+    background-color: #333;
+    color: #fff;
+    margin-top: 5px;
+    height: 2.5em;
+    padding: 5px;
+}
+
+#dv-designer-info{
+    float: right;
+    color: #6B6262;
+    text-align: center;
+    font-size: 11pt;
+}
+#dv-designer-info:hover{
+    color: white;
+}
+#ttAppVersion{
+    padding-top: 5px;
+}
+
+
+//corousel
+
+#slides_control > div{
+  height: 200px;
+}
+img{
+  margin:auto;
+  width: 400px;
+}
+#slides_control {
+  width: 400px;
+}

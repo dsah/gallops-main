@@ -1,0 +1,35 @@
+<div class="page-container">
+    <div data-ng-controller="CarouselCtrl" id="slides_control">
+        <div style="height: 305px">
+            <carousel interval="myInterval">
+                <slide ng-repeat="slide in slides" active="slide.active">
+                    <img ng-src="{{slide.image}}" style="margin:auto;">
+                    <div class="carousel-caption">
+                        <p>{{slide.text}}</p>
+                    </div>
+                </slide>
+            </carousel>
+        </div>
+
+    </div>
+    <div class="dv-under-construction">Home page is under construction!
+        <h2>Contact Form:</h2><br>
+        <form name="contact" action="thank-you" netlify>
+            <p>
+                <label>Your Name:</label>
+                <input type="text" name="name">
+            </p>
+            <p>
+                <label>Your Email</label>
+                <input type="email" name="email">
+            </p>
+            <p>
+                <label>Message</label>
+                <textarea name="message"></textarea>
+            </p>
+            <p>
+                <button>Send</button>
+            </p>
+        </form>
+    </div>
+</div>

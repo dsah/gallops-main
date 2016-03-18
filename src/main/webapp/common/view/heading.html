@@ -1,16 +1,11 @@
-<!--
-The main heading available on all pages.
--->
 <div id="dvHeading" class="gallops-main-heading" >
-    <img id="imgLogo" src="" alt="logo image"  class="gallops-logo"/>
     <div id="dvTabMenu" class="gallops-section-menu tabbed">
-        {{testNav}}
-<!--        <nav>
-            <tabset>
-                <tab data-ng-repeat="tab in sectionTabs" heading="{{tab.title}}" active="tab.active" disabled="tab.disabled" data-ng-click="navigate(tab.path)">
-                </tab>
-            </tabset>
-        </nav>-->
+        <div ng-cloak>
+            <md-content>
+                <md-tabs md-dynamic-height md-border-bottom>
+                    <md-tab data-ng-repeat="tab in sectionTabs" md-active="tab.active" data-ng-click="navigate(tab.path)"  label="{{tab.title}}"></md-tab>
+                </md-tabs>
+            </md-content>
+        </div>
     </div>
-     <img id="imgBranding" src="" alt="brand image" class="gallops-branding"/>
 </div>
