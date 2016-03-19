@@ -13,6 +13,7 @@
         <link   type="text/css" href="//netdna.bootstrapcdn.com/bootstrap/3.1.1/css/bootstrap.min.css" rel="stylesheet" />
         <link rel="stylesheet" type="text/css" href="src/main/webapp/common/style/lib/angular-material.min.css">
         <link rel="stylesheet" type="text/css" href="src/main/webapp/common/style/default.css">
+        <link rel="stylesheet" type="text/css" href="src/main/webapp/home/style/homepage.css">
 
 
         <script type="text/javascript" src="src/main/webapp/common/script/lib/jquery-2.1.0.min.js" type="text/javascript"></script>
@@ -43,7 +44,14 @@
                 documentation.</p>
             </noscript>
             <div id="dvDisplay" class="view-holder" data-ng-controller="NavigationCtrl">
-                <header class="branding">Logo - Usha</header>
+                <header class="branding">
+                    <div id="contact-number">
+                        <b>Book your appointment</b><br>
+                        <span> Mob: (+61) 410063204</span><br>
+                        <span>Skype: usha.sagathiya </span>
+                        
+                    </div>
+                </header>
                 <header data-ng-include="headingURL"></header>
                 <div id="dvContent" data-ng-view="" class="gallops-content-area micro-clearfix"></div>
                 <footer data-ng-include="footerURL">Logo</footer>

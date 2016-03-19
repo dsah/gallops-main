@@ -1,35 +1,37 @@
 <div class="page-container">
-    <div data-ng-controller="CarouselCtrl" id="slides_control">
-        <div style="height: 305px">
-            <carousel interval="myInterval">
-                <slide ng-repeat="slide in slides" active="slide.active">
-                    <img ng-src="{{slide.image}}" style="margin:auto;">
-                    <div class="carousel-caption">
-                        <p>{{slide.text}}</p>
-                    </div>
-                </slide>
-            </carousel>
+    <!--    <div data-ng-controller="CarouselCtrl" id="slides_control">
+            <div style="height: 305px">
+                <carousel interval="myInterval">
+                    <slide ng-repeat="slide in slides" active="slide.active">
+                        <img ng-src="{{slide.image}}" style="margin:auto;">
+                        <div class="carousel-caption">
+                            <p>{{slide.text}}</p>
+                        </div>
+                    </slide>
+                </carousel>
+            </div>
+    
+        </div>-->
+    <div class="dv-home-page-container">
+        <div>
+            <p><b>Vision:</b> to provide correct option for your career
+                Commitment: Best solution for your carer success
+            </p><br>
+            <div>
+                <div id="dv-why-study">
+                    <h3>Why study in Australia?</h3>
+                    <ul>
+                        <li>3rd most popular international student destination in the world</li>
+                        <li>22000 courses, 1100 institutions </l>
+                        <li>88 out of 100 top global universities are Australian</l>
+                        <li>5 out of 30 best cities to live in the world are in Australia</l>
+                    </ul>
+                </div>
+                <div id="main-image-home">
+                    <img class="home-page-main-img" src="src/main/webapp/resources/images/Picture1.png" alt=""/>
+                </div>
+            </div>
         </div>
 
-    </div>
-    <div class="dv-under-construction">Home page is under construction!
-        <h2>Contact Form:</h2><br>
-        <form name="contact" action="thank-you" netlify>
-            <p>
-                <label>Your Name:</label>
-                <input type="text" name="name">
-            </p>
-            <p>
-                <label>Your Email</label>
-                <input type="email" name="email">
-            </p>
-            <p>
-                <label>Message</label>
-                <textarea name="message"></textarea>
-            </p>
-            <p>
-                <button>Send</button>
-            </p>
-        </form>
     </div>
 </div>

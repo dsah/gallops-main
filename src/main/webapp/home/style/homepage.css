@@ -1,0 +1,16 @@
+
+#dv-why-study{
+    width: 40%;
+    float: left;
+}
+#main-image-home{
+    width: 60%;
+    float: right;
+}
+
+.home-page-main-img {
+    width: 100%;
+    float: right;
+    padding-left: 5px;
+    border-radius: 8px;
+}
