@@ -10,7 +10,8 @@ angular.module("gallops",
             "gallops.controller",
             "gallops.service",
             "gallops.values"])
-        .config(["$routeProvider", function ($routeProvider) {
+        .config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
+                $locationProvider.html5Mode(true)
                 var CONSTANTS = gallops.common.service.constants;
                 var MAIN_PATH_MAPS = CONSTANTS.PATH_MAPS.MAIN;
                 $routeProvider

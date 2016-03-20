@@ -8,9 +8,24 @@ body{
 }
 #dvContent{
     padding: 10px;
+    min-height: 590px;
+    border-top: 2px solid #0A0404;
 }
+
+#dvHeading{
+    background-color: green;
+}
+
+#dvTabMenu{
+    margin-left: 33%;
+}
+
 #dvDisplay{
-    border-radius: 10px;
+    border-radius: 5px;
+    border: 5px solid green;
+    max-width: 1500px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .branding{
@@ -19,12 +34,8 @@ body{
 }
 
 .main-container{
-    min-height: 650px;
-    border-radius: 5px;
+    min-height: 660px;
     background-color: lightskyblue;
-    width: 80%;
-    margin-left: auto;
-    margin-right: auto;
 }
 .page-container{
     min-height: 350px
@@ -69,9 +80,9 @@ md-tabs-canvas{
 #slides_control > div{
     height: 200px;
 }
+
 img{
     margin:auto;
-    width: 400px;
 }
 #slides_control {
     width: 400px;
@@ -81,6 +92,25 @@ img{
     width: 300px;
     height: 80%;
     float: right;
-    text-align: center;
     padding: 10px;
+}
+
+.dv-contact-icon{
+    width: 20px;
+    margin-left: 15px;
+    float: left;
+    color: blue;
+}
+
+.blibk-book-appt {
+    animation: blinker 1.5s linear infinite;
+}
+
+@keyframes blinker {  
+    50% { opacity: 0.0; }
+}
+
+#dv-footer-content{
+    display: flex;
+    justify-content: space-around;
 }
