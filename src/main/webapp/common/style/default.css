@@ -4,7 +4,6 @@ body{
     height: auto;
     padding: 0px;
     margin: 0px;
-    background-color: #BEE7F3;
 }
 #dvContent{
     padding: 10px;
@@ -12,10 +11,22 @@ body{
     border-top: 2px solid #0A0404;
 }
 
+.main-container{
+    min-height: 660px;
+    background-color: #9DACB1;
+}
+
 #dvHeading{
     background-color: green;
 }
-
+.terms-of-use a{
+    color: #FFFFFF;
+}
+.terms-of-use{
+    vertical-align: middle;
+    margin-top: 8px;
+    display: inline-block;
+}
 #dvTabMenu{
     margin-left: 33%;
 }
@@ -23,9 +34,10 @@ body{
 #dvDisplay{
     border-radius: 5px;
     border: 5px solid green;
-    max-width: 1500px;
+    max-width: 80%;
     margin-left: auto;
     margin-right: auto;
+    background-color: #4E96EF;
 }
 
 .branding{
@@ -33,10 +45,7 @@ body{
     height: 100px;
 }
 
-.main-container{
-    min-height: 660px;
-    background-color: lightskyblue;
-}
+
 .page-container{
     min-height: 350px
 }
@@ -104,6 +113,7 @@ img{
 
 .blibk-book-appt {
     animation: blinker 1.5s linear infinite;
+    color:#0323A2;
 }
 
 @keyframes blinker {  
@@ -113,4 +123,12 @@ img{
 #dv-footer-content{
     display: flex;
     justify-content: space-around;
+}
+#logo-container{
+    width: 70%;
+    float: left;
+    height: 100%;
+}
+.logo-img-top{
+    padding-left: 20px;
 }
