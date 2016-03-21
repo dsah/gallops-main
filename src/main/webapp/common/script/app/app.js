@@ -19,8 +19,9 @@ angular.module("gallops",
                         .when(MAIN_PATH_MAPS.SERVICES.path, {controller: "NavigationCtrl", templateUrl: MAIN_PATH_MAPS.SERVICES.templateUrl})
                         .when(MAIN_PATH_MAPS.ABOUT.path, {controller: "NavigationCtrl", templateUrl: MAIN_PATH_MAPS.ABOUT.templateUrl})
                         .when(MAIN_PATH_MAPS.CONTACT.path, {controller: "NavigationCtrl", templateUrl: MAIN_PATH_MAPS.CONTACT.templateUrl})
-                        .when(MAIN_PATH_MAPS.FAQ.path, {controller: "NavigationCtrl", templateUrl: MAIN_PATH_MAPS.FAQ.templateUrl})
-                        .otherwise({redirectTo: MAIN_PATH_MAPS.HOME.path});
+                        //.when(MAIN_PATH_MAPS.FAQ.path, {controller: "NavigationCtrl", templateUrl: MAIN_PATH_MAPS.FAQ.templateUrl})
+                        .when(MAIN_PATH_MAPS.NOT_FOUND.path, {templateUrl: MAIN_PATH_MAPS.NOT_FOUND.templateUrl})
+                        .otherwise({redirectTo: MAIN_PATH_MAPS.NOT_FOUND.path});
 
             }])
         .run(function ($rootScope, $route, $location) {

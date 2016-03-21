@@ -2,6 +2,11 @@
 #dv-why-study{
     width: 40%;
     float: left;
+    padding: 5px;
+}
+#dv-visa-options{
+    width: 40%;
+    padding: 5px;
 }
 #main-image-home{
     width: 60%;
@@ -13,4 +18,33 @@
     float: right;
     padding-left: 5px;
     border-radius: 8px;
+}
+
+@media only screen and (max-width:1279px) and (min-width:956px) {
+
+    #dv-why-study, #dv-visa-options{
+        width: 40%;
+    }
+}
+
+@media only screen and (max-width: 955px) {
+
+    #dv-why-study, dv-visa-options{
+        width: 100%;
+    }
+
+    .home-page-main-img {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 550px) {
+    #dv-why-study, dv-visa-options{
+        width: 100%;
+    }
+
+    .home-page-main-img {
+        display: none;
+    }
+
 }

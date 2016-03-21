@@ -21,38 +21,7 @@ http.createServer(function (req, res) {
         res.writeHead(200, {'Content-Type': 'text/html'});
         fs.createReadStream(dir + '/index.html').pipe(res);
         return;
-    }
-    else if (pathname == '/home') {
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        fs.createReadStream(dir + '/index.html').pipe(res);
-        return;
-    }
-    
-    else if (pathname == '/services') {
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        fs.createReadStream(dir + '/index.html').pipe(res);
-        return;
-    }
-    
-    else if (pathname == '/contact') {
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        fs.createReadStream(dir + '/index.html').pipe(res);
-        return;
-    }
-    
-    else if (pathname == '/faq') {
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        fs.createReadStream(dir + '/index.html').pipe(res);
-        return;
-    }
-    
-     else if (pathname == '/about') {
-        res.writeHead(200, {'Content-Type': 'text/html'});
-        fs.createReadStream(dir + '/index.html').pipe(res);
-        return;
-    }
-
-    else if (m = pathname.match(/^\/src\//)) {
+    }else if (m = pathname.match(/^\/src\//)) {
         var filename = dir + pathname;
         var stats = fs.existsSync(filename) && fs.statSync(filename);
         if (stats && stats.isFile()) {
@@ -61,6 +30,10 @@ http.createServer(function (req, res) {
             fs.createReadStream(filename).pipe(res);
             return;
         }
+    }else{
+        res.writeHead(200, {'Content-Type': 'text/html'});
+        fs.createReadStream(dir + '/index.html').pipe(res);
+        return;
     }
     res.writeHead(404, {'Content-Type': 'text/plain'});
     res.write('404 Not Found\n');

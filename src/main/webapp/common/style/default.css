@@ -7,12 +7,12 @@ body{
 }
 #dvContent{
     padding: 10px;
-    min-height: 590px;
     border-top: 2px solid #0A0404;
 }
 
 .main-container{
-    min-height: 660px;
+    height: 100%;
+    width: 100%;
     background-color: #9DACB1;
 }
 
@@ -37,7 +37,7 @@ body{
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #4E96EF;
+    background-color: #D3F3D9;
 }
 
 .branding{
@@ -50,7 +50,7 @@ body{
     min-height: 350px
 }
 .md-tab.md-active{
-    background-color: #8C9EFF;
+    background-color: #D3F3D9;
 }
 
 .md-tab:hover{
@@ -68,7 +68,7 @@ md-tabs-canvas{
     background-color: #333;
     color: #fff;
     margin-top: 5px;
-    height: 3.5em;
+    font-family: monospace;
     padding: 5px;
 }
 
@@ -76,7 +76,6 @@ md-tabs-canvas{
     float: right;
     color: #6B6262;
     text-align: center;
-    font-size: 11pt;
 }
 #dv-designer-info:hover{
     color: white;
@@ -131,4 +130,92 @@ img{
 }
 .logo-img-top{
     padding-left: 20px;
+}
+#dvResourceNotFound{
+    text-align: center;
+}
+
+#dv-footer-content div{
+    padding: 5px;
+}
+
+.fa-exclamation-triangle{
+    color: #FF3300;
+} 
+
+
+@media only screen and (max-width:1279px) and (min-width:956px) {
+    #dvTabMenu{
+        margin-left: 20%;
+    }
+
+    #contact-number{
+        width: auto;
+        padding: 6px;
+    }
+
+}
+
+@media only screen and (max-width: 955px) {
+    #dvDisplay{
+        border: 1px solid green;
+        max-width: 100%;
+    }
+    #dvTabMenu{
+        margin-left: 5px;
+    }
+    #logo-container{
+        width: 60%;
+    }
+    #dvTabMenu md-content{
+        width: 100%;
+    }
+
+    #contact-number{
+        width: auto;
+        padding: 3px;
+    }
+
+    .view-container{
+        min-height: 100%; 
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    #dvDisplay{
+        border: none;
+        max-width: 100%;
+    }
+
+    #dvTabMenu{
+        margin-left: 0px;
+    }
+
+    #dvTabMenu md-content{
+        width: 100%;
+    }
+
+    #contact-number{
+        width: auto;
+        padding: 1px;
+    }
+
+    #logo-container{
+        width: 50%;
+    }
+
+    #logo-container h1{
+        font-size: 20px;
+        margin: 0px;
+    }
+    .branding{
+        height: 60px;
+    }
+    .logo-img-top{
+        padding: 2px;
+    }
+    .view-container{
+        min-height: 100%; 
+    }
 }

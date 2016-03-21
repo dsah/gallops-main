@@ -1,6 +1,6 @@
 
 #dv-contact-form{
-    width: 505px;
+    width: 45%;
     margin-left: auto;
     margin-right: auto;
     border: 2px solid green;
@@ -28,6 +28,70 @@
     padding-left: 405px;
 }
 .contact-message-txt-area{
-    width: 480px;
+    width: 100%;
     height: 100px;
+}
+
+
+@media only screen and (max-width:1279px) and (min-width:956px) {
+    #dv-contact-form{
+        width: 60%;
+    }
+
+    .contact-message-txt-area{
+        width: 100%;
+    }
+    .enquiry-submit-btn{
+        padding: 15px;
+    }
+
+}
+
+@media only screen and (max-width: 955px) {
+    #dv-contact-form{
+        width: 75%;
+        border: none;
+        padding: 5px;
+    }
+
+    .enquiry-submit-btn{
+        padding-top: 10px;
+        padding-left: 10px;
+        margin-right: 100px;
+    }
+
+    .enquiry_form_table tr td input{
+        width: 150px;
+        line-height: 1.1em;
+    }
+
+    .contact-message-txt-area{
+        width: 335px;
+        height: 100px;
+    }
+
+}
+
+@media only screen and (max-width: 550px) {
+    #dv-contact-form{
+        width: 100%;
+        border: none;
+        padding: 2px;
+    }
+
+    .enquiry-submit-btn{
+        padding-top: 5px;
+        padding-left: 5px;
+    }
+
+    .enquiry_form_table tr td input{
+        width: 100%;
+        line-height: .8em;
+    }
+
+    .contact-message-txt-area{
+        width: 335px;
+        height: 100%;
+    }
+
 }

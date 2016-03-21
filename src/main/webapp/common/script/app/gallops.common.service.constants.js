@@ -17,11 +17,11 @@ gallops.common.service.constants = {
     },
     PATH_MAPS: {
         MAIN: {
-            HOME: {path: "/home", templateUrl: "src/main/webapp/home/view/home.html"},
+            HOME: {path: "/", templateUrl: "src/main/webapp/home/view/home.html"},
             SERVICES: {path: "/services", templateUrl: "src/main/webapp/services/view/services.html"},
             ABOUT: {path: "/about", templateUrl: "src/main/webapp/about/view/about.html"},
             CONTACT: {path: "/contact", templateUrl: "src/main/webapp/contact/view/contact.html"},
-            FAQ: {path: "/faq", templateUrl: "src/main/webapp/faq/view/faq.html"},
+           // FAQ: {path: "/faq", templateUrl: "src/main/webapp/faq/view/faq.html"},
             NOT_FOUND: {path: "/404", templateUrl: "src/main/webapp/common/view/404.html"}
         }
     }
@@ -34,8 +34,8 @@ gallops.common.service.constants.SECTION_TABS = [
             {title: "Home", path: "/", active: false, disabled: true},
             {title: "Services", path: "/services", active: false, disabled: true},
             {title: "About", path: "/about", active: false, disabled: true},
-            {title: "Contact", path: "/contact", active: false, disabled: true},
-            {title: "FAQ", path: "/faq", active: false, disabled: true}
+            {title: "Contact", path: "/contact", active: false, disabled: true}
+           // {title: "FAQ", path: "/faq", active: false, disabled: true}
         ];
 
 gallops.common.service.constants.menus = {
