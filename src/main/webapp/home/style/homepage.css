@@ -29,20 +29,21 @@
 
 @media only screen and (max-width: 955px) {
 
-    #dv-why-study, dv-visa-options{
+    #dv-why-study, #dv-visa-options{
         width: 100%;
     }
 
     .home-page-main-img {
         display: none;
     }
+    
 }
 
 @media only screen and (max-width: 550px) {
-    #dv-why-study, dv-visa-options{
+    #dv-why-study, #dv-visa-options{
         width: 100%;
     }
-
+    
     .home-page-main-img {
         display: none;
     }
