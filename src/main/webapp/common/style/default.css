@@ -70,6 +70,7 @@ md-tabs-canvas{
     margin-top: 5px;
     font-family: monospace;
     padding: 5px;
+    clear: both;
 }
 
 #dv-designer-info{
