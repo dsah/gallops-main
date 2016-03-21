@@ -10,10 +10,15 @@ angular.module("gallops",
             "gallops.controller",
             "gallops.service",
             "gallops.values"])
-        .config(["$routeProvider", "$locationProvider", function ($routeProvider, $locationProvider) {
+        .config(["$routeProvider",
+            "$locationProvider",
+            "$compileProvider", function ($routeProvider,
+                    $locationProvider,
+                    $compileProvider) {
                 $locationProvider.html5Mode(true)
                 var CONSTANTS = gallops.common.service.constants;
                 var MAIN_PATH_MAPS = CONSTANTS.PATH_MAPS.MAIN;
+                $compileProvider.debugInfoEnabled(false);
                 $routeProvider
                         .when(MAIN_PATH_MAPS.HOME.path, {controller: "NavigationCtrl", templateUrl: MAIN_PATH_MAPS.HOME.templateUrl})
                         .when(MAIN_PATH_MAPS.SERVICES.path, {controller: "NavigationCtrl", templateUrl: MAIN_PATH_MAPS.SERVICES.templateUrl})

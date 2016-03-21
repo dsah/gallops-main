@@ -1,50 +1,47 @@
 
-#dv-why-study{
-    width: 40%;
+#dv-home-page-carousel-wrapper{
+    width: 55%;
+    float: right;
+}
+#dv-study-options{
+    width: 45%;
     float: left;
-    padding: 5px;
+    padding-right: 5px;
 }
-#dv-visa-options{
-    width: 40%;
-    padding: 5px;
-}
-#main-image-home{
-    width: 60%;
-    float: right;
-}
-
-.home-page-main-img {
-    width: 100%;
-    float: right;
-    padding-left: 5px;
-    border-radius: 8px;
+#dv-home-page-carousel-wrapper .glyphicon-chevron-left, #dv-home-page-carousel-wrapper .glyphicon-chevron-right{
+    font-size: 15px;
 }
 
 @media only screen and (max-width:1279px) and (min-width:956px) {
 
-    #dv-why-study, #dv-visa-options{
-        width: 40%;
-    }
 }
 
 @media only screen and (max-width: 955px) {
 
-    #dv-why-study, #dv-visa-options{
-        width: 100%;
+    #dv-study-options{
+        width: 45%;
     }
 
-    .home-page-main-img {
+}
+
+@media only screen and (max-width: 755px) {
+
+    
+    #dv-study-options{
+        width: 100%;
+    }
+    #dv-home-page-carousel-wrapper {
         display: none;
     }
-    
+
 }
 
 @media only screen and (max-width: 550px) {
-    #dv-why-study, #dv-visa-options{
+    #dv-study-options{
         width: 100%;
     }
-    
-    .home-page-main-img {
+
+    #dv-home-page-carousel-wrapper {
         display: none;
     }
 

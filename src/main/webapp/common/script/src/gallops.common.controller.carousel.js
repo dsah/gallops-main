@@ -11,17 +11,14 @@ gallops.common.controller.CarouselController = ['$scope',
         $scope.myInterval = 2000;
         $scope.slides = [
             {
-                image: 'http://lorempixel.com/400/200/'
+                image: 'src/main/webapp/resources/images/Picture1.png',
+                id:0
             },
             {
-                image: 'http://lorempixel.com/400/200/food'
-            },
-            {
-                image: 'http://lorempixel.com/400/200/sports'
-            },
-            {
-                image: 'http://lorempixel.com/400/200/people'
+                image: 'src/main/webapp/resources/images/picture2.png',
+                id:1
             }
+            
         ];
 
     }];

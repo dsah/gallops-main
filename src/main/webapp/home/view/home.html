@@ -18,27 +18,37 @@
                 <b>Commitment:</b> Best solution for your carer success
             </p>
             <div>
-                <div id="dv-why-study">
-                    <h3>Why study in Australia?</h3>
-                    <ul>
-                        <li>3<sup>rd</sup> most popular international student destination in the world</li>
-                        <li>22000 courses, 1100 institutions </li>
-                        <li>88 out of 100 top global universities are Australian</li>
-                        <li>5 out of 30 best cities to live in the world are in Australia</li>
-                    </ul>
+                <div id="dv-study-options">
+                    <div id="dv-why-study">
+                        <h3>Why study in Australia?</h3>
+                        <ul>
+                            <li>3<sup>rd</sup> most popular international student destination in the world</li>
+                            <li>22000 courses, 1100 institutions </li>
+                            <li>88 out of 100 top global universities are Australian</li>
+                            <li>5 out of 30 best cities to live in the world are in Australia</li>
+                        </ul>
+                    </div>
+                    <div id="dv-visa-options">
+                        <h3>Visa Options</h3>
+                        <ul>
+                            <li>Visitor Visa: Maximum 3 months study</li>
+                            <li>Working holiday visa: Maximum 4 months study</li>
+                            <li>Student Guardian visa</li>
+                            <li>Higher Education visa: up to 3 years Masters course work</li>
+                            <li>Research course work: up to 4 years research work</li>
+                        </ul>
+                    </div>
                 </div>
-                <div id="main-image-home">
-                    <img class="home-page-main-img" src="src/main/webapp/resources/images/Picture1.png" alt=""/>
-                </div>
-                <div id="dv-visa-options">
-                    <h3>Visa Options</h3>
-                    <ul>
-                        <li>Visitor Visa: Maximum 3 months study</li>
-                        <li>Working holiday visa: Maximum 4 months study</li>
-                        <li>Student Guardian visa</li>
-                        <li>Higher Education visa: up to 3 years Masters course work</li>
-                        <li>Research course work: up to 4 years research work</li>
-                    </ul>
+                <div id="dv-home-page-carousel-wrapper">
+                    <div ng-controller="CarouselCtrl">
+                        <div style="height: 305px">
+                            <uib-carousel active="active" interval="myInterval" no-wrap="noWrapSlides">
+                                <uib-slide ng-repeat="slide in slides track by slide.id" index="slide.id">
+                                    <img ng-src="{{slide.image}}" style="margin:auto; height: 200px; width: 800px;">
+                                </uib-slide>
+                            </uib-carousel>
+                        </div>
+                    </div>
                 </div>
             </div>
         </div>
