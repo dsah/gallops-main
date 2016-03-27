@@ -131,6 +131,8 @@ img{
 }
 .logo-img-top{
     padding-left: 20px;
+    width:120px;
+    float: left;
 }
 #dvResourceNotFound{
     text-align: center;
@@ -143,6 +145,11 @@ img{
 .fa-exclamation-triangle{
     color: #FF3300;
 } 
+
+#slogan{
+    text-align: center;
+    margin-top: 40px;
+}
 
 
 @media only screen and (max-width:1279px) and (min-width:956px) {
