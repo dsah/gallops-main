@@ -5,20 +5,16 @@
             <form name="contact" action="thank-you" netlify>
                 <table class="enquiry_form_table">
                     <tr>
-                        <td><span>First Name &nbsp;:</span></td>
-                        <td><input type="text" name="first_name"></td>
-                    </tr>
-                    <tr>
-                        <td><span>Last Name &nbsp;:</span></td>
-                        <td><input type="text" name="last_name"></td>
+                        <td><span>Name &nbsp;: <span class="required-field">*</span></span></td>
+                        <td><input type="text" name="first_name" required="true"></td>
                     </tr>
                     <tr>
                         <td><span>Gender &nbsp;:</span></td>
                         <td><input type="text" name="gender"></td>
                     </tr>
                     <tr>
-                        <td><span>Address &nbsp;:</span></td>
-                        <td><input type="text" name="addres"></td>
+                        <td><span>E-mail &nbsp;: <span class="required-field">*</span></span></td>
+                        <td><input type="text" name="email" required="true"></td>
                     </tr>
                     <tr>
                         <td><span>Date of Birth &nbsp;:</span></td>

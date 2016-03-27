@@ -28,7 +28,7 @@ body{
     display: inline-block;
 }
 #dvTabMenu{
-    margin-left: 33%;
+    margin-left: 20%;
 }
 
 #dvDisplay{
@@ -37,7 +37,7 @@ body{
     max-width: 80%;
     margin-left: auto;
     margin-right: auto;
-    background-color: #D3F3D9;
+    background-color: #FFFFFF;
 }
 
 .branding{

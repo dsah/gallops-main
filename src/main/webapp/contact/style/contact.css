@@ -25,12 +25,17 @@
 .enquiry-submit-btn{
     text-align: center;
     padding-top: 20px;
-    padding-left: 405px;
+    padding-left: 305px;
 }
 .contact-message-txt-area{
     width: 100%;
     height: 100px;
 }
+.required-field{
+color: red;
+float: right;
+}
+
 
 
 @media only screen and (max-width:1279px) and (min-width:956px) {
