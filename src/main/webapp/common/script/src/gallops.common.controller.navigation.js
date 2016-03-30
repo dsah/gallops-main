@@ -19,6 +19,10 @@ gallops.common.controller.NavigationController = ['$scope',
 
         var path = $location.path();
 
+        $(window).resize(function () {
+            resizeView();
+        });
+
         function initialise() {
             $scope.sectionTabs = gallops.common.service.constants.SECTION_TABS;
 
@@ -28,9 +32,12 @@ gallops.common.controller.NavigationController = ['$scope',
                     tab.active = true;
                 }
             });
+            resizeView();
 
+        }
+
+        function resizeView() {
             $(".view-container").css({"min-height": $window.innerHeight - 200 + "px"});
-
         }
 
         function navigate(toWhere) {
