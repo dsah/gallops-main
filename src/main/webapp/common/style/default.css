@@ -43,6 +43,8 @@ body{
 .branding{
     background-color: #76ECEC;
     height: 100px;
+    display: flex;
+    justify-content:space-around;
 }
 
 
@@ -98,7 +100,7 @@ img{
 }
 
 #contact-number{
-    width: 300px;
+    //width: 300px;
     height: 80%;
     float: right;
     padding: 10px;
@@ -131,8 +133,9 @@ img{
 }
 .logo-img-top{
     padding-left: 20px;
-    width:120px;
+    width:auto;
     float: left;
+    text-align: center;
 }
 #dvResourceNotFound{
     text-align: center;
@@ -148,7 +151,11 @@ img{
 
 #slogan{
     text-align: center;
-    margin-top: 40px;
+    margin: 2%;
+    vertical-align: middle;
+    font-weight: bold;
+    font-style: italic;
+    font-size: 24pt;
 }
 
 
@@ -179,13 +186,11 @@ img{
         width: 100%;
     }
 
-    #contact-number{
-        width: auto;
-        padding: 3px;
-    }
-
     .view-container{
         min-height: 100%; 
+    }
+    #slogan{
+    font-size: 18pt;
     }
 
 }
@@ -205,7 +210,7 @@ img{
     }
 
     #contact-number{
-        width: auto;
+        //width: auto;
         padding: 1px;
     }
 
@@ -223,7 +228,13 @@ img{
     .logo-img-top{
         padding: 2px;
     }
+    .logo-img-top img{
+        height: 60px;
+    }
     .view-container{
         min-height: 100%; 
+    }
+    #slogan{
+    font-size: 12pt;
     }
 }
