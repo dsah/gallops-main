@@ -27,6 +27,9 @@
     padding-top: 20px;
    // padding-left: 305px;
 }
+.enquiry-submit-btn .md-button{
+    background: cyan;
+}
 .contact-message-txt-area{
     width: 100%;
     height: 100px;
@@ -83,9 +86,10 @@ float: right;
         padding: 2px;
     }
 
-    .enquiry-submit-btn, .enquiry-submit-btn button{
+    .enquiry-submit-btn, .enquiry-submit-btn .md-button{
         width: 100%;
         border-radius: 5px;
+        margin: 0px;
     }
 
     .enquiry_form_table tr td input{
